@@ -14,14 +14,7 @@
     object-fit: cover;
 }
 
-.best-seller-image-wrapper .primary-image,
-.best-seller-image-wrapper .secondary-image {
-    width: 355px;
-    height: 355px;
-}
-
 /* Scroll bar CSS */
-
 .best-seller-container {
   position: relative;
 }
@@ -51,7 +44,15 @@
 }
 
 .scroll-bar:hover .scroll-bar-thumb {
-  background: #000;
+  background: #231F20;
+}
+
+@media screen and (min-width: 768px){
+  .best-seller-image-wrapper .primary-image,
+  .best-seller-image-wrapper .secondary-image {
+      width: 355px;
+      height: 355px;
+  }
 }
 
 @media screen and (max-width: 768px) {
