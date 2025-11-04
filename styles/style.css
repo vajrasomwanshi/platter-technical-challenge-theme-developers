@@ -1,0 +1,61 @@
+/* Hide scrollbar but keep functionality */
+.best-seller-inner-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.best-seller-inner-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.best-seller-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.best-seller-image-wrapper .primary-image,
+.best-seller-image-wrapper .secondary-image {
+    width: 355px;
+    height: 355px;
+}
+
+/* Scroll bar CSS */
+
+.best-seller-container {
+  position: relative;
+}
+
+.scroll-bar {
+  position: relative;
+  height: 4px;
+  background: #DDD6D7;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.2s ease;
+}
+
+.scroll-bar:hover {
+  height: 6px;
+}
+
+.scroll-bar-thumb {
+  position: absolute;
+  height: 100%;
+  background: #231F20;
+  border-radius: 6px;
+  width: 0;
+  left: 0;
+  transition: background 0.2s ease;
+}
+
+.scroll-bar:hover .scroll-bar-thumb {
+  background: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .section-header-links.flex.justify-between{
+        justify-content: center;
+    }
+}
