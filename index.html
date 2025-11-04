@@ -1,300 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Font: Source Serif 4 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet" />
     <!-- tailwindCSS CDN file for having most recent updates -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <section class="best-seller-section pt-[36px] pl-[24px] pr-[24px] pb-[36px] sm:pt-[48px] sm:pl-[48px] sm:pr-[48px] md:pt-[80px] md:pl-[80px] md:pr-[80px]">
-        <div class="section-header-links flex justify-between mb-[24px] md:mb-[36px]">
-            <h2 class="sub-heading font-['Source_Serif_4'] text-[#231F20] font-bold text-[28px] leading-[126%] tracking-[-0.01em] text-center md:font-black md:text-[40px] md:leading-[120%] md:tracking-[-0.01em]  md:text-left">Best Sellers</h2>
-            <a href="#" class="category-link relative hidden md:inline-flex items-center gap-[8px] font-['Poppins'] font-semibold text-[14px] leading-[140%] tracking-[0.03em] text-[#5C553A] text-center px-[32px] py-[16px]">
-                <span>Shop All Best Sellers</span>
-                <span class="w-[20px] h-[20px] px-[5px] py-[3px] flex items-center justify-center">
-                    <svg width="13" height="10" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6H14.3333M14.3333 6L9.33333 1M14.3333 6L9.33333 11" stroke="#5C553A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
-            </a>
-        </div>
-        <div class="best-seller-container md:-mr-[80px]">
-            <div class="best-seller-inner-wrapper flex flex-wrap justify-around gap-y-[12px] md:overflow-visible md:flex-nowrap md:gap-[24px] md:overflow-x-auto md:pb-[64px] md:pr-[80px]">
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img 
-                            src="assets/headsets-img-1.jpg" 
-                            alt="headsets" 
-                            width="355" 
-                            height="355"/>
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <img 
-                            src="assets/headsets-img-2.jpg" 
-                            alt="headsets alternate view" 
-                            width="355" 
-                            height="355" 
-                            loading="lazy" 
-                            class=" object-cover"
-                            />
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Outside Vibes T-Shirt Sunshine</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-
-                        <span class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
-                            SAVE 15%
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/glasses.jpg" alt="glasses" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/glasses-2.jpg" alt="glasses alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Hike Bottle Outside Vibes Forest Green</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/shoes.jpg" alt="shoes" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/shoes-2.jpg" alt="shoes alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Rest in Nature T-Shirt Charcoal</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-
-                        <span class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
-                            SAVE 15%
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/banana.jpg" alt="Banana" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/banana-2.jpg" alt="Banana alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Outside Vibes Cap Forest Green</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/car.jpg" alt="Car" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/car-2.jpg" alt="Car alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Rest in Nature T-Shirt Charcoal</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-
-                        <span class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
-                            SAVE 15%
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/book.jpg" alt="Book" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/book-2.jpg" alt="Book alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Outside Vibes T-Shirt Sunshine</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/pillow.jpg" alt="Pillow" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/pillow-2.jpg" alt="Pillow alternative view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Hike Bottle Outside Vibes Forest Green</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-
-                        <span class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
-                            SAVE 15%
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/pet-food.jpg" alt="Pet Food" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/pet-food-2.jpg" alt="Pet Food alternative view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Rest in Nature T-Shirt Charcoal</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/ear-ring.jpg" alt="Ear ring" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/ear-ring-2.jpg" alt="Ear ring alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Outside Vibes Cap Forest Green</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
-                <a href="#" class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
-                    <div class="badge-container relative">
-                        <span class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
-                            BEST SELLER
-                        </span>
-
-                        <span class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
-                            SAVE 15%
-                        </span>
-                    </div>
-                    <div class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
-                        <div class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
-                            <img src="assets/tyres.jpg" alt="Tyres" width="355" height="355" />
-                        </div>
-                        <div class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                            <img src="assets/tyres-2.jpg" alt="Tyres alternate view" width="355" height="355" loading="lazy"/>
-                        </div>
-                    </div>
-                    <div class="best-seller-product-details">
-                        <p class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">Rest in Nature T-Shirt Charcoal</p>
-                        <div class="review-container flex items-center gap-[4px] mb-[8px]">
-                            <div class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
-                            <div class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">1,234 Reviews</div>
-                        </div>
-                        <div class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">$ 104.95</div>
-                    </div>
-                </a>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Best Sellers</title>
+  </head>
+  <body>
+    <section
+      class="best-seller-section pt-[36px] pl-[24px] pr-[24px] pb-[36px] sm:pt-[48px] sm:pl-[48px] sm:pr-[48px] md:pt-[80px] md:pl-[80px] md:pr-[80px]">
+      <div
+        class="section-header-links flex justify-center md:justify-between mb-[24px] md:mb-[36px]">
+        <h2
+          class="sub-heading font-['Source_Serif_4'] text-[#231F20] font-bold text-[28px] leading-[126%] tracking-[-0.01em] text-center md:font-black md:text-[40px] md:leading-[120%] md:tracking-[-0.01em] md:text-left">
+          Best Sellers
+        </h2>
+        <a
+          href="#"
+          class="category-link relative hidden md:inline-flex items-center gap-[8px] font-['Poppins'] font-semibold text-[14px] leading-[140%] tracking-[0.03em] text-[#5C553A] text-center px-[32px] py-[16px]">
+          <span>Shop All Best Sellers</span>
+          <span
+            class="w-[20px] h-[20px] px-[5px] py-[3px] flex items-center justify-center">
+            <svg
+              width="13"
+              height="10"
+              viewBox="0 0 16 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 6H14.3333M14.3333 6L9.33333 1M14.3333 6L9.33333 11"
+                stroke="#5C553A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="best-seller-container md:-mr-[80px]">
+        <div
+          class="best-seller-inner-wrapper flex flex-wrap justify-around gap-y-[12px] md:overflow-visible md:flex-nowrap md:gap-[24px] md:overflow-x-auto md:pb-[64px] md:pr-[80px]">
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
             </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/headsets-img-1.jpg"
+                  alt="headsets"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <img
+                  src="assets/headsets-img-2.jpg"
+                  alt="headsets alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Outside Vibes T-Shirt Sunshine
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+
+              <span
+                class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
+                SAVE 15%
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/glasses.jpg"
+                  alt="glasses"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/glasses-2.jpg"
+                  alt="glasses alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Hike Bottle Outside Vibes Forest Green
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/shoes.jpg"
+                  alt="shoes"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/shoes-2.jpg"
+                  alt="shoes alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Rest in Nature T-Shirt Charcoal
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+
+              <span
+                class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
+                SAVE 15%
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/banana.jpg"
+                  alt="Banana"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/banana-2.jpg"
+                  alt="Banana alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Outside Vibes Cap Forest Green
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img src="assets/car.jpg" alt="Car" width="355" height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/car-2.jpg"
+                  alt="Car alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Rest in Nature T-Shirt Charcoal
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+
+              <span
+                class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
+                SAVE 15%
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/book.jpg"
+                  alt="Book"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/book-2.jpg"
+                  alt="Book alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Outside Vibes T-Shirt Sunshine
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/pillow.jpg"
+                  alt="Pillow"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/pillow-2.jpg"
+                  alt="Pillow alternative view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Hike Bottle Outside Vibes Forest Green
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+
+              <span
+                class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
+                SAVE 15%
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/pet-food.jpg"
+                  alt="Pet Food"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/pet-food-2.jpg"
+                  alt="Pet Food alternative view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Rest in Nature T-Shirt Charcoal
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/ear-ring.jpg"
+                  alt="Ear ring"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/ear-ring-2.jpg"
+                  alt="Ear ring alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Outside Vibes Cap Forest Green
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="best-seller-item flex-shrink-0 group w-[calc(50%-12px)] md:w-auto opacity-100 translate-y-0 transition-all duration-300 ease-in-out md:transition-none">
+            <div class="badge-container relative">
+              <span
+                class="absolute top-[4px] left-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-black border border-black rounded-[100px] px-[8px] py-[4px] bg-white md:top-[8px] md:left-[8px] md:text-[10px] md:tracking-[0.06em]">
+                BEST SELLER
+              </span>
+
+              <span
+                class="absolute top-[4px] right-[4px] z-[1] font-['Bebas_Neue'] font-normal text-[8px] leading-[100%] tracking-[0.04em] text-center text-[#FFFFFA] border border-black rounded-[100px] px-[8px] py-[4px] bg-[#5C7962] md:top-[8px] md:right-[27px] md:text-[10px] md:tracking-[0.06em]">
+                SAVE 15%
+              </span>
+            </div>
+            <div
+              class="best-seller-image-wrapper relative overflow-hidden rounded-[10px] border border-transparent mb-[12px] md:mb-[16px]">
+              <div
+                class="primary-image aspect-square transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                <img
+                  src="assets/tyres.jpg"
+                  alt="Tyres"
+                  width="355"
+                  height="355" />
+              </div>
+              <div
+                class="secondary-image aspect-square absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <img
+                  src="assets/tyres-2.jpg"
+                  alt="Tyres alternate view"
+                  width="355"
+                  height="355"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="best-seller-product-details">
+              <p
+                class="font-['Bebas_Neue'] font-normal text-[16px] leading-[100%] tracking-[0.03em] uppercase text-[#1C1D1D] mb-[8px] md:text-[18px]">
+                Rest in Nature T-Shirt Charcoal
+              </p>
+              <div
+                class="review-container flex items-center gap-[4px] mb-[8px]">
+                <div
+                  class="star-container flex bg-[url('assets/stars.svg')] bg-no-repeat bg-left bg-contain items-center w-[53px] h-[9px] md:w-[68px] md:h-[12px]"></div>
+                <div
+                  class="reviews-count font-['Poppins'] text-[11px] text-[#707070] md:text-[12px]">
+                  1,234 Reviews
+                </div>
+              </div>
+              <div
+                class="font-['Poppins'] font-medium text-[16px] leading-[100%] tracking-[0em] uppercase text-[#1C1D1D]">
+                $ 104.95
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="scroll-bar hidden md:block"></div>
-        <div class="show-more-btn block md:hidden font-['Poppins'] font-semibold text-[16px] leading-[140%] tracking-[0.03em] text-center w-full py-[16px] bg-[#1C1D1D] text-[#FFFFFA] mt-[12px] rounded-[100px]">
-            Show More
-        </div>
+      </div>
+      <div class="scroll-bar hidden md:block"></div>
+      <button
+        class="show-more-btn block md:hidden font-['Poppins'] font-semibold text-[16px] leading-[140%] tracking-[0.03em] text-center w-full py-[16px] bg-[#1C1D1D] text-[#FFFFFA] mt-[12px] rounded-[100px]">
+        Show More
+      </button>
     </section>
-    <script src="scripts/main-script.js" ></script>
-</body>
+    <script src="scripts/main-script.js"></script>
+  </body>
 </html>

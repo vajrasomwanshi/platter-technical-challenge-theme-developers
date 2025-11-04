@@ -14,7 +14,7 @@
     object-fit: cover;
 }
 
-/* Scroll bar CSS */
+/* Custom Scroll bar CSS */
 .best-seller-container {
   position: relative;
 }
@@ -47,16 +47,12 @@
   background: #231F20;
 }
 
+/* End- Custom Scroll bar CSS */
+
 @media screen and (min-width: 768px){
   .best-seller-image-wrapper .primary-image,
   .best-seller-image-wrapper .secondary-image {
       width: 355px;
       height: 355px;
   }
-}
-
-@media screen and (max-width: 768px) {
-    .section-header-links.flex.justify-between{
-        justify-content: center;
-    }
 }
