@@ -143,9 +143,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showFirstFourInstant() {
     bestSellerItems.forEach((item, index) => {
-      item.style.display = index < 4 ? "block" : "none";
-      item.style.opacity = "1";
-      item.style.transform = "translateY(0)";
+      if (index < 4) {
+        item.style.display = "block";
+        item.style.opacity = "1";
+        item.style.transform = "translateY(0)";
+      } else {
+        item.style.display = "none";
+        item.style.opacity = "0";
+        item.style.transform = "translateY(10px)";
+      }
     });
   }
 
@@ -159,19 +165,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setupShowMore() {
     if (isMobile()) {
-      // Apply transition styling
-      bestSellerItems.forEach((item) => {
-        item.style.transition = "opacity 0.3s ease, transform 0.3s ease";
-      });
-
+      // First set display states WITHOUT transitions
       if (bestSellerItems.length > 4) {
         showMoreBtn.style.display = "block";
         showFirstFourInstant();
+        
+        // Apply transition styling AFTER initial state is set
+        requestAnimationFrame(() => {
+          bestSellerItems.forEach((item) => {
+            item.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+          });
+        });
       } else {
         showMoreBtn.style.display = "none";
       }
+    } else {
+      // Desktop: always show all
+      showAllInstant();
+      showMoreBtn.style.display = "none";
+      // Remove transitions on desktop
+      bestSellerItems.forEach((item) => {
+        item.style.transition = "";
+      });
+    }
+  }
 
-      // Handle click toggle
+  // Handle click toggle (only attach once)
+  let clickHandlerAttached = false;
+
+  function attachClickHandler() {
+    if (!clickHandlerAttached) {
       showMoreBtn.addEventListener("click", function () {
         const isExpanded = showMoreBtn.classList.toggle("expanded");
 
@@ -190,14 +213,13 @@ document.addEventListener("DOMContentLoaded", () => {
           showMoreBtn.textContent = "Show More";
         }
       });
-    } else {
-      // Desktop: always show all
-      showAllInstant();
-      showMoreBtn.style.display = "none";
+      clickHandlerAttached = true;
     }
   }
 
+  // Initial setup
   setupShowMore();
+  attachClickHandler();
 
   // Re-run on resize (mobile ↔ desktop)
   window.addEventListener("resize", () => {
@@ -206,5 +228,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setupShowMore();
   });
   // END- Load more button functionality for mobile
-
 });
