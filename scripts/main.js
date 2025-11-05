@@ -128,17 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 60 * (index - 3)); // staggered animation
       }
     });
-
-    // Smooth scroll to the newly revealed items
-    setTimeout(() => {
-      const lastItem = bestSellerItems[bestSellerItems.length - 1];
-      if (lastItem) {
-        lastItem.scrollIntoView({
-          behavior: "smooth",
-          block: "end"
-        });
-      }
-    }, 400);
   }
 
   function showFirstFourInstant() {
@@ -168,7 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // First set display states WITHOUT transitions
       if (bestSellerItems.length > 4) {
         showMoreBtn.style.display = "block";
-        showFirstFourInstant();
+        
+        // Only set initial state if button is not expanded
+        if (!showMoreBtn.classList.contains("expanded")) {
+          showFirstFourInstant();
+        }
         
         // Apply transition styling AFTER initial state is set
         requestAnimationFrame(() => {
@@ -203,13 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
           showMoreBtn.textContent = "Show Less";
         } else {
           hideItemsSmoothly();
-
-          // Smoothly scroll back to top of section
-          section.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-
           showMoreBtn.textContent = "Show More";
         }
       });
@@ -221,10 +207,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setupShowMore();
   attachClickHandler();
 
-  // Re-run on resize (mobile ↔ desktop)
+  // Re-run on resize (mobile ↔ desktop) but preserve expanded state
   window.addEventListener("resize", () => {
-    showMoreBtn.classList.remove("expanded");
-    showMoreBtn.textContent = "Show More";
     setupShowMore();
   });
   // END- Load more button functionality for mobile
