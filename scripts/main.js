@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Re-run on resize
   window.addEventListener("resize", handleResize);
 
-  // End of desktop scrollbar functionality
+  // END- desktop scrollbar functionality
 
   // Load more button functionality for mobile
   const showMoreBtn = document.querySelector(".show-more-btn");

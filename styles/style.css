@@ -3,6 +3,7 @@
     display: none;
 }
 
+/* Best seller wrapper, image */
 .best-seller-inner-wrapper {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -13,6 +14,7 @@
     height: 100%;
     object-fit: cover;
 }
+/* End- Best seller wrapper, image */
 
 /* Custom Scroll bar CSS */
 .best-seller-container {
@@ -46,9 +48,9 @@
 .scroll-bar:hover .scroll-bar-thumb {
   background: #231F20;
 }
-
 /* End- Custom Scroll bar CSS */
 
+/* Responsive styles best seller image wrapper */
 @media screen and (min-width: 768px){
   .best-seller-image-wrapper .primary-image,
   .best-seller-image-wrapper .secondary-image {
@@ -56,3 +58,4 @@
       height: 355px;
   }
 }
+/* End- Responsive styles best seller image wrapper */
