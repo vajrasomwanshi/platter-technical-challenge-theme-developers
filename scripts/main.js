@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load more button functionality for mobile
   const showMoreBtn = document.querySelector(".show-more-btn");
-  const bestSellerItems = document.querySelectorAll(".best-seller-item");
+  const bestSellerItems = document.querySelectorAll("li a.best-seller-item");
   const section = document.querySelector(".best-seller-section");
 
   function isMobile() {
